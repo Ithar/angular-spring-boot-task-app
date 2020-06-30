@@ -1,6 +1,6 @@
 # angular-spring-boot-task-app 
 
-Angular 4 task manager app; connected to Spring boot backend.  
+Angular 10 task manager app; connected to Spring boot backend.  
 
 #### Features 
 - 
@@ -14,8 +14,9 @@ Angular 4 task manager app; connected to Spring boot backend.
 Stack  | version |
 --- | --- |  
 *Java* | 1.8 
-*SpringBoot* |  2.2.4.RELEASE
-*Frontend* | Angular 4 
+*SpringBoot* |  2.3.1.RELEASE
+*Frontend* | Angular 10
+*Node* | v12.18.1
 *DB* | h2-database (in memory)
 *Server* | Tomcat (embedded)
 *Build Tool* | Maven
@@ -23,14 +24,26 @@ Stack  | version |
 *Code Coverage* | Codecov
 *Build env* | (embedded)
 
-## Application Build
+## Application Set-up
 
+#### h2
 JDBC URL: jdbc:h2:mem:tasks
+
+#### Angular
+npm install -g @angular/cli
+cd src/main
+ng new frontend
+
+## Application Build
+cd src/main/frontend
+ng serve
 
 Spring Boot: com.malik.ithar.task.Application.class
 
 ## Application URL
 http://localhost:8080/api/tasks
+
+http://localhost:4200
 
 ## Application profile
 -Dspring.profiles.active=unit-tests
