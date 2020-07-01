@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+.task-container {
+    margin: 120px auto  auto auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
