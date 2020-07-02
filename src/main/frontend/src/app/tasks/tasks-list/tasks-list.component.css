@@ -5,3 +5,12 @@
 ul {
     list-style-type:none;
 }
+
+.task-date {
+    padding-left: 80px;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    color: #3d0101;
+}

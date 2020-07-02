@@ -34,9 +34,9 @@ npm install -g @angular/cli
 cd src/main
 ng new frontend
 
-## Application Build
+## Application Run
 cd src/main/frontend
-ng serve
+nmp start 
 
 Spring Boot: com.malik.ithar.task.Application.class
 
