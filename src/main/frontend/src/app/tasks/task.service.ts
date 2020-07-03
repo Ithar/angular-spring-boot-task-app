@@ -1,5 +1,5 @@
 import {HttpClient} from "@angular/common/http";
-import {Injectable} from "@angular/core";
+import {Injectable, EventEmitter} from "@angular/core";
 import {Task} from "./task.model";
 
 @Injectable({
@@ -22,4 +22,6 @@ export class TaskService {
         task.completed = checked;
         return this.http.post('/api/v1/task/save', task);
     }
+
+    taskAddedEvent = new EventEmitter<Task>();
 }

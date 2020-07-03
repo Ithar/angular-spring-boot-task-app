@@ -1,7 +1,10 @@
 <div id="taskAdd" class="task-list-container">
 
     <label>Add new task:
-        <input type="text" placeholder="Add new task ..." />
+        <input type="text"
+               placeholder="Add new task ..."
+               (keyup.enter)="onAddTask($event)"
+               [(ngModel)]="addTaskValue" />
     </label>
 
 </div>

@@ -12,6 +12,7 @@ import {HttpClientModule} from "@angular/common/http";
 
 // Project Modules
 import { TaskService } from "./tasks/task.service";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,11 +21,12 @@ import { TaskService } from "./tasks/task.service";
     TasksAddComponent,
     TasksListComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-      HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule
+    ],
   providers: [TaskService],
   bootstrap: [AppComponent]
 })
