@@ -1,5 +1,6 @@
 import {HttpClient} from "@angular/common/http";
 import {Injectable} from "@angular/core";
+import {Task} from "./task.model";
 
 @Injectable({
     providedIn: 'root'
@@ -12,7 +13,13 @@ export class TaskService {
     }
 
     getTasks() {
-        return this.http.get('/api/tasks'); //.map(resp => resp.json());
+        console.log('Listing tasks');
+        return this.http.get('/api/v1/task');
     }
 
+    saveTask(task: Task, checked: boolean) {
+        console.log('Saving task [id=' + task.id + ']');
+        task.completed = checked;
+        return this.http.post('/api/v1/task/save', task);
+    }
 }
