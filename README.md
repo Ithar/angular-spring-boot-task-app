@@ -30,20 +30,32 @@ Stack  | version |
 JDBC URL: jdbc:h2:mem:tasks
 
 #### Angular
+npm install --save-dev rimraf
+npm install --save-dev mkdirp
+npm install --save-dev copyfiles
+
 npm install -g @angular/cli
 cd src/main
 ng new frontend
 
 ## Application Run
+````
 cd src/main/frontend
-nmp start 
+npm run start 
+````
+http://localhost:4200
 
-Spring Boot: com.malik.ithar.task.Application.class
-
-## Application URL
+Spring Boot: `com.malik.ithar.task.Application.class`
 http://localhost:8080/api/tasks
 
-http://localhost:4200
+## Application Build 
+```
+npm run build
+com.malik.ithar.task.Application.class
+```
+
+## Application URL
+http://localhost:8080
 
 ## Application profile
 -Dspring.profiles.active=unit-tests
