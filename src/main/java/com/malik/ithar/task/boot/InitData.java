@@ -11,14 +11,13 @@ import java.time.LocalDate;
 @Configuration
 public class InitData {
 
-
     @Bean
     CommandLineRunner commandLineRunner(TaskService taskService) {
 
         return (args) -> {
-            taskService.save(new Task(1L, "Complete Angular course", LocalDate.now(), false));
+            taskService.save(new Task(1L, "Advanced Angular Course", LocalDate.now(), false));
             taskService.save(new Task(2L, "Aws Certification", LocalDate.now(), false));
-            taskService.save(new Task(3L, "Azure developer", LocalDate.now(), false));
+            taskService.save(new Task(3L, "Azure Developer", LocalDate.now(), false));
         };
     }
 

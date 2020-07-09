@@ -1,11 +1,14 @@
 # angular-spring-boot-task-app 
 
-Angular 10 task manager app; connected to Spring boot backend.  
+Angular 10 task manager app; connected to Spring boot backend. 
+Create and complete tasks.
+
+![home page screen](./img/home.png)
 
 #### Features 
-- 
-- 
--  
+- Single-page application 
+- Initial data load 
+- Frontend packaged with backend via webpack
 
 ## 
 
@@ -14,14 +17,14 @@ Angular 10 task manager app; connected to Spring boot backend.
 Stack  | version |
 --- | --- |  
 *Java* | 1.8 
-*SpringBoot* |  2.3.1.RELEASE
+*SpringBoot* | 2.3.1.RELEASE
 *Frontend* | Angular 10
 *Node* | v12.18.1
 *DB* | h2-database (in memory)
 *Server* | Tomcat (embedded)
 *Build Tool* | Maven
-*CI* | CircleCI  
-*Code Coverage* | Codecov
+*CI* | n/a 
+*Code Coverage* | n/a
 *Build env* | (embedded)
 
 ## Application Set-up
@@ -50,7 +53,9 @@ http://localhost:8080/api/tasks
 
 ## Application Build 
 ```
+cd src/main/frontend
 npm run build
+--------------------------------------
 com.malik.ithar.task.Application.class
 ```
 
